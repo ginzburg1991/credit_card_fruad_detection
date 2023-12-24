@@ -9,7 +9,7 @@ This project focuses on detecting and predicting credit card fraud, a significan
 ## Project Files
 - `project_3.R`: This R script includes data preprocessing, exploratory data analysis, and the implementation of different models such as linear regression, logistic regression, and decision trees to predict credit card fraud.
 - `project.py`: A Python script that complements the R analysis with additional data processing, model training using machine learning techniques, and evaluation metrics to assess the effectiveness of the models.
-
+- `presentation`: Presenting the models and scores obtained through machine learning and data analysis.
 ## Data Description
 The dataset used in this project contains one million entries of credit card transactions with over eighty-seven thousand reported fraud cases. It includes metadata such as the distance from the account's address, transaction history, and purchase patterns.
 
