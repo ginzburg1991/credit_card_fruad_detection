@@ -6,7 +6,7 @@ library(pROC)
 library(dplyr)
 library(pROC)
 set.seed(5533)
-dataset <- read.csv("/Users/benjaminlindeen/developement/credit-card-fraud-detection/datatset/card_transdata.csv")
+dataset <- read.csv("~/dsads/card_transdata.csv")
 
 dataset <- na.omit(dataset)
 small_constant <- 0.0000001
