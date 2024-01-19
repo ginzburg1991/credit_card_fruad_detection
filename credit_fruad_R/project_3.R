@@ -45,6 +45,9 @@ print(paste("Linear Regression - F1 Score:", f1_score_lin))
 
 log_model <- glm(fraud ~ ., data = training, family = binomial(), weights = class_weights)
 predictions <- predict(log_model, testing, type = "response")
+roc_curve <- roc(testing$fraud, predictions)
+auc_value <- auc(roc_curve)
+print(paste("AUC for Logistic Regression:", auc_value))
 predictions <- ifelse(predictions > 0.5, 1, 0)
 confusionMatrix(factor(predictions), factor(testing$fraud))
 
